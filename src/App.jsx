@@ -27,14 +27,15 @@ function App() {
 
   return (
     <>
-      <div>
-        <Header />
-        <main>
-          <h1>this is blog</h1>
-        <Outlet/>
-        </main>
-        <Footer />
-      </div>
+<div className="flex flex-col min-h-screen">
+    <Header className="bg-gray-800 text-white p-4" />
+    <main className="flex-grow bg-gray-100 p-6">
+        <h1 className="text-3xl font-bold mb-4">This is Blog</h1>
+        <Outlet />
+    </main>
+    <Footer className="bg-gray-800 text-white p-4" />
+</div>
+
     </>
   );
 }
